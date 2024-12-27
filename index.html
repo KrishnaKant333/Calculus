@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 Questions Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="quest.css">
+</head>
+<body>
+  <h1>10 Questions Game</h1>
+  <div id="particles-js"></div>
+  <div id="game-container">
+    <div id="question-box">
+      <p id="question-number"></p>
+      <p id="question">Click "Start" to begin your quest!</p>
+      <input type="text" id="answer" placeholder="Type your answer here" style="display: none;">
+      <button id="submit" style="display: none;">Submit</button>
+      <button id="reveal" style="display:none;">Reveal Answer</button>
+      <button id="previous" style="display: none;">Previous</button>
+      <button id="next" style="display: none;">Next</button>
+    </div>
+    <button id="start">Start</button>
+    <div id="rewards">
+      <h2>Your Rewards:</h2>
+      <div id="gallery"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="quest.js"></script>
+</body>
+</html>

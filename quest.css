@@ -1,0 +1,150 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #1a1a1a; /* Dark background for a cyberpunk feel */
+  color: #e6e6e6; /* Light text for contrast */
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#game-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.4); /* Glowing edges */
+  backdrop-filter: blur(10px); /* Blur effect for background */
+  border: 2px solid #00FFFF; /* Neon border for a futuristic touch */
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a; /* Dark background to match the theme */
+  z-index: -1; /* Ensures particles stay behind the game content */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #00FFFF; /* Neon cyan for the heading */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF; /* Glowing text effect */
+}
+
+#question-box {
+  margin-bottom: 20px;
+}
+
+#rewards {
+  margin-top: 20px;
+}
+
+#gallery img {
+  max-width: 100px;
+  margin: 5px;
+  border: 2px solid #00FFFF; /* Neon cyan border around rewards */
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00FFFF; /* Glowing effect around rewards */
+}
+
+button {
+  padding: 12px 30px;
+  background-color: #00FFFF; /* Neon cyan button background */
+  color: #000; /* Dark text for contrast */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.4); /* Glowing shadow effect */
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00b3b3; /* Slightly darker neon color on hover */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Enhanced glowing effect on hover */
+}
+
+#question-number {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #00FFFF; /* Neon cyan for question number */
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #00FFFF;
+  background-color: #333;
+  color: #fff;
+  margin: 10px 0;
+  width: 80%;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ff0099; /* Pinkish border on focus for contrast */
+  box-shadow: 0 0 5px #ff0099;
+}
+
+button:active {
+  box-shadow: 0 0 5px #ff0099; /* Glowing effect on button press */
+}
+
+#start {
+  font-size: 1.5rem;
+  padding: 15px 40px;
+  background-color: #ff0099; /* Pink color for start button */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 0, 153, 0.6); /* Glowing effect for the start button */
+}
+
+#start:hover {
+  background-color: #ff66b3;
+  box-shadow: 0 0 20px rgba(255, 0, 153, 0.8); /* Pink glow effect on hover */
+}
+
+#previous, #next {
+  background-color: #ff66b3; /* Different color for previous/next buttons */
+  font-size: 1rem;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+#previous:hover, #next:hover {
+  background-color: #ff3399; /* Slightly darker pink on hover */
+  box-shadow: 0 0 10px rgba(255, 0, 153, 0.6); /* Pinkish glow on hover */
+}
+
+#rewards h2 {
+  font-size: 1.5rem;
+  color: #00FFFF;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 20px #00FFFF;
+}
+
+#game-container {
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
