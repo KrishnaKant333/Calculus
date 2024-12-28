@@ -95,7 +95,7 @@ const questionsPool = [
   { question: "In the 1st quadrant, cosx, cosecx, and cotx are ____ (inc/dec) functions", answer: "dec" },
   { question: "What is the derivative of ln(x)?", answer: "1/x" },
   { question: "Find the value of d/dx(e^x) when x = 0", answer: "1"},
-  { question: "", image: "test.jpg", answer: "0"},
+  { question: "", image: "1.jpg", answer: "0"},
   // Add more math-related questions here
 ];
 
