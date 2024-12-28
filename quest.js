@@ -84,7 +84,7 @@ particlesJS('particles-js', {
 
 const questionsPool = [
   { question: "Identify whether T or F : ∫tanxdx = log|secx| + C ", answer: "T" },
-  { question: "d(tanx)/dx at x=0 is?", answer: "1" },
+  { question: "d(tanx)/dx at x=π/2 is?", answer: "1" },
   { question: "Identify whether T or F : ∫logx = xlogx - x + C", answer: "T" },
   { question: "What is the slope of the tangent line to y = x³ at x = 2?", answer: "12" },
   { question: "Identify whether T or F : ∫sec²xdx/tanx = log|tanx| + C", answer: "T" },
@@ -95,7 +95,29 @@ const questionsPool = [
   { question: "In the 1st quadrant, cosx, cosecx, and cotx are ____ (inc/dec) functions", answer: "dec" },
   { question: "What is the derivative of ln(x)?", answer: "1/x" },
   { question: "Find the value of d/dx(e^x) when x = 0", answer: "1"},
-  { question: " ", image: "1.jpg", answer: "0"},
+  { question: "What is the derivative of x² at x = 3?", answer: "6" },
+  { question: "Evaluate the integral of 3x dx from x = 0 to x = 2.", answer: "6" },
+  { question: "What is the value of the slope of y = x³ at x = 2?", answer: "12" },
+  { question: "If f(x) = x², what is f'(4)?", answer: "8" },
+  { question: "What is the area under the curve y = x from x = 0 to x = 3?", answer: "4" },
+  { question: "Find the value of the limit as x approaches 2 of (x² - 4)/(x - 2).", answer: "4" },
+  { question: "What is the value of d/dx (3x²) at x = 1?", answer: "6" },
+  { question: "Evaluate the derivative of sin(x) at x = π/2 (in radians).", answer: "0" },
+  { question: "What is the second derivative of x³ at x = 1?", answer: "6" },
+  { question: "Find the maximum value of f(x) = -x² + 4x on [0, 4].", answer: "4" },
+  { question: "If f(x) = x³ - 6x² + 9x, find f'(3).", answer: "0" },
+  { question: "Evaluate ∫2x dx from x = 0 to x = 3.", answer: "9" },
+  { question: "What is the value of the derivative of e^x at x = 0?", answer: "1" },
+  { question: "If y = ln(x), what is dy/dx at x = 1?", answer: "1" },
+  { question: "Find the value of the limit as x approaches 0 of (x²)/(sin²(x)).", answer: "1" },
+  { question: "Solve : ", image: "1.jpg", answer: "0"},
+  { question: "Identify whether T or F : ", image: "2.jpg", answer: "T"},
+  { question: "", image: "3.jpg", answer: "2"},
+  { question: "", image: "4.jpg", answer: "π/4"},
+  { question: "", image: "5.jpg", answer: "1/t"},
+  { question: "", image: "6.jpg", answer: "0"},
+  { question: "", image: "7.jpg", answer: "1/x"},
+  { question: "", image: "8.jpg", answer: "13"},
   // Add more math-related questions here
 ];
 
@@ -224,6 +246,7 @@ function loadQuestion() {
     imageElement.remove();
   }
 }
+
 
 function rewardPlayer() {
   // Show reward for the correct answer
