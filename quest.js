@@ -95,6 +95,7 @@ const questionsPool = [
   { question: "In the 1st quadrant, cosx, cosecx, and cotx are ____ (inc/dec) functions", answer: "dec" },
   { question: "What is the derivative of ln(x)?", answer: "1/x" },
   { question: "Find the value of d/dx(e^x) when x = 0", answer: "1"},
+  { question: "", image: "test.jpg", answer: "0"},
   // Add more math-related questions here
 ];
 
@@ -201,9 +202,27 @@ nextButton.addEventListener('click', () => {
 });
 
 function loadQuestion() {
-  // Update the question number and load the current question
+  // Update the question number
   questionNumberElement.textContent = `Question ${currentQuestionIndex + 1}`;
+  
+  // Update the question text
   questionElement.textContent = questions[currentQuestionIndex].question;
+  
+  // Add or update the image for the question
+  const imageElement = document.getElementById('question-image');
+  if (questions[currentQuestionIndex].image) {
+    if (!imageElement) {
+      // Create the image element if it doesn't exist
+      const newImageElement = document.createElement('img');
+      newImageElement.id = 'question-image';
+      newImageElement.style.maxWidth = "100%";
+      questionElement.appendChild(newImageElement);
+    }
+    document.getElementById('question-image').src = questions[currentQuestionIndex].image;
+  } else if (imageElement) {
+    // Remove the image if the question has none
+    imageElement.remove();
+  }
 }
 
 function rewardPlayer() {
