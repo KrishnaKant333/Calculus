@@ -7,6 +7,13 @@ body {
   padding: 20px;
 }
 
+#question-image {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;    /* Maintain aspect ratio */  
+  display: block;  /* Make sure the image is on its own line */
+  margin : 10px auto; /* Space between question and image */
+}
+
 #game-container {
   max-width: 600px;
   margin: 0 auto;
@@ -16,12 +23,6 @@ body {
   box-shadow: 0 4px 20px rgba(0, 255, 255, 0.4); /* Glowing edges */
   backdrop-filter: blur(10px); /* Blur effect for background */
   border: 2px solid #00FFFF; /* Neon border for a futuristic touch */
-}
-
-#question-image {
-  max-width: 100%;
-  height: auto;
-  margin: 10px 0;
 }
 
 #particles-js {
