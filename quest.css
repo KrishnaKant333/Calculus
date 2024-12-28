@@ -18,6 +18,12 @@ body {
   border: 2px solid #00FFFF; /* Neon border for a futuristic touch */
 }
 
+#question-image {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
 #particles-js {
   position: absolute;
   top: 0;
