@@ -84,7 +84,7 @@ particlesJS('particles-js', {
 
 const questionsPool = [
   { question: "Identify whether T or F : ∫tanxdx = log|secx| + C ", answer: "T" },
-  { question: "d(tanx)/dx at x=π/2 is?", answer: "1" },
+  { question: "d(tanx)/dx at x=0 is?", answer: "1" },
   { question: "Identify whether T or F : ∫logx = xlogx - x + C", answer: "T" },
   { question: "What is the slope of the tangent line to y = x³ at x = 2?", answer: "12" },
   { question: "Identify whether T or F : ∫sec²xdx/tanx = log|tanx| + C", answer: "T" },
